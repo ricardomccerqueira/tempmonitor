@@ -15,6 +15,31 @@ What does it really do?
 It shows the current temperature on the lcd, and it creates 1 .json file per day with all the temperature variations of that day
 
 
+Dependencies
+===========
+
+- Arduino 
+- lcd display ( you can follow sparkfun circuit 11 )
+- temperature sensor ( you can follow sparkfun circuit 7 )
+- nodejs
+- grunt
+- johnny-five
+- coffeescript
+
+
+How to use it?
+===========
+
+assuming you have all the dependencies:
+- $ cd tempmonitor
+- $ npm install
+- $ grunt 
+- $ node node app/tempmonitor.js
+
+note that you can leave grunt and node running in two separate tabs, if you have a mac just run this 1 liner inside tempmonitor folder:
+
+    npm update && osascript -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' -e 'tell application "System Events" to tell process "terminal" to keystroke "grunt"' -e 'tell application "System Events" to tell process "terminal" to keystroke return' && node app/tempmonitor.js
+
 
 How to tweak it?
 ===========
@@ -40,15 +65,3 @@ change **freq** for the update time, it will only start the app after that inter
       freq: 900000 #15 minutes
     )
     
-
-
-Dependencies
-===========
-
-- Arduino 
-- lcd display ( you can follow sparkfun circuit 11 )
-- temperature sensor ( you can follow sparkfun circuit 7 )
-- nodejs
-- grunt
-- johnny-five
-- coffeescript
