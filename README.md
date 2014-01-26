@@ -38,7 +38,7 @@ assuming you have all the dependencies:
 
 note that you can leave grunt and node running in two separate tabs, if you have a mac just run this 1 liner inside tempmonitor folder:
 
-    npm update && osascript -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' -e 'tell application "System Events" to tell process "terminal" to keystroke "grunt"' -e 'tell application "System Events" to tell process "terminal" to keystroke return' && node app/tempmonitor.js
+    npm install && osascript -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down' -e 'tell application "System Events" to tell process "terminal" to keystroke "grunt"' -e 'tell application "System Events" to tell process "terminal" to keystroke return' && node app/tempmonitor.js
 
 
 How to tweak it?
