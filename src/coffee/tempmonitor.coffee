@@ -24,7 +24,7 @@ App = (() ->
       temperature = ((voltage - .5) * 100)
       
       if !isNaN temperature
-        lcd.clear().print "   " + parseInt(temperature) + " celcius"
+        lcd.clear().print "   " + parseInt(temperature) + " celsius"
         date = moment().format("DD-MM-YYYY HH:mm")
         filename = "app/json/" + moment().format("DD-MM-YYYY") + ".json"
 
